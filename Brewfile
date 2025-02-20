@@ -1,7 +1,7 @@
 tap "homebrew/bundle"
 
 brew "stow"
-brew "font-jetbrains-mono-nerd-font"
+brew "font-roboto-mono-nerd-font"
 brew "neovim"
 brew "tmux"
 brew "koekeishiya/formulae/yabai"  # ✅ Correct tap for yabai
