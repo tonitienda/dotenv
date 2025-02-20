@@ -16,7 +16,7 @@ brew bundle --file=Brewfile
 DOTFILES_DIR="$HOME/.dotfiles"
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "Cloning dotfiles..."
-    git clone https://github.com/yourusername/dotfiles.git "$DOTFILES_DIR"
+    git clone https://github.com/tonitienda/dotenv.git "$DOTFILES_DIR"
 fi
 
 # Use GNU Stow to create symlinks

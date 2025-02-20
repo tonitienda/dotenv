@@ -1,0 +1,67 @@
+# Alacritty Configuration File
+
+# Window settings
+window:
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  opacity: 0.95
+  startup_mode: Maximized
+  decorations: none
+
+# Font settings
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
+  size: 14
+
+# Cursor settings
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+# Colorscheme (Gruvbox Dark)
+colors:
+  primary:
+    background: "#282828"
+    foreground: "#ebdbb2"
+  normal:
+    black: "#282828"
+    red: "#cc241d"
+    green: "#98971a"
+    yellow: "#d79921"
+    blue: "#458588"
+    magenta: "#b16286"
+    cyan: "#689d6a"
+    white: "#a89984"
+  bright:
+    black: "#928374"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#ebdbb2"
+
+# Keybindings
+key_bindings:
+  - { key: N, mods: Command, action: SpawnNewInstance } # Cmd+N opens a new Alacritty window
+  - { key: Return, mods: Command, action: ToggleFullscreen } # Cmd+Enter for fullscreen
+  - { key: K, mods: Command, chars: "\x02k" } # Cmd+K for tmux up
+  - { key: J, mods: Command, chars: "\x02j" } # Cmd+J for tmux down
+  - { key: H, mods: Command, chars: "\x02h" } # Cmd+H for tmux left
+  - { key: L, mods: Command, chars: "\x02l" } # Cmd+L for tmux right
+
+# Shell startup command (if using tmux)
+shell:
+  program: /opt/homebrew/bin/tmux
+  args: ["new-session", "-A", "-s", "main"]
