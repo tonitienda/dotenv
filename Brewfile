@@ -1,0 +1,20 @@
+tap "homebrew/bundle"
+
+brew "neovim"
+brew "tmux"
+brew "yabai"
+brew "skhd"
+brew "hurl"
+brew "httpie"
+brew "jq"
+brew "fzf"
+brew "ripgrep"
+brew "zoxide"
+brew "exa"
+brew "bat"
+brew "lazygit"
+brew "node"
+brew "nvm"
+brew "go"
+
+cask "raycast" # Quick launcher
